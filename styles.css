@@ -1,0 +1,28 @@
+.card {
+    margin-top: 25px;
+}
+
+h1.heading {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+form #submit {
+    background-color: #343A40;
+    color: #fff;
+    cursor: pointer;
+}
+
+h4#results {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+img.imgLoader {
+    display: block;
+    /* width: 200px; */
+    margin: auto;
+}
+.imgLoader, .results{
+    display: none;
+}

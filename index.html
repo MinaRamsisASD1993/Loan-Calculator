@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-dark">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="heading">Loan Calculator</h1>
+                        <form id="loan-form" action="#">
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">$</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="loan-amount" placeholder="Loan Amount">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">%</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="interest" placeholder="Interest">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="numberOfYears" placeholder="Years to repay">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-lg btn-block" id="submit" value="Calculate">
+                            </div>
+                            <!-- Image Loader -->
+                            <div class="imgLoader">
+                                <img src="img/loading.gif" alt="image" class="imgLoader">
+                            </div>
+                            <!-- Results -->
+                            <div class="results">
+                                <h4 id="results">Results</h4>
+
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Monthly Payment</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="monthlyPayment" disabled>
+                                </div>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Total Payment</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="totalPayment" disabled>
+                                </div>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Total Interest</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="totalInterest" disabled>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
